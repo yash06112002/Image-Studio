@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ url: signedUrl });
   } catch (error) {
     return NextResponse.json(
-      { error: "Failed to generate presigned URL" },
+      { error: "Failed to generate presigned URL" + error },
       { status: 500 }
     );
   }

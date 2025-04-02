@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { Button } from "@/components/ui/button";
-import { AiOutlineCloudUpload, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineCloudUpload } from "react-icons/ai";
 import { Dialog } from "@headlessui/react";
 import { HiDownload } from "react-icons/hi";
 

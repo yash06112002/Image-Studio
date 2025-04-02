@@ -20,8 +20,6 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export async function POST(req: Request) {
   try {
-    console.log(process.env);
-    
     const formData = await req.formData();
     const file = formData.get("file") as File;
     const style = formData.get("style") as string;

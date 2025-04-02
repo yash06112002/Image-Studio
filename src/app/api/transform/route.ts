@@ -57,7 +57,7 @@ export async function POST(req: Request) {
     });
 
     let transformedBuffer: Buffer | null = null;
-    for (const part of response.candidates[0].content.parts) {
+    for (const part of response.candidates?.[0]?.content?.parts || []) {
       if (part.inlineData?.data) {
         transformedBuffer = Buffer.from(part.inlineData.data, "base64");
         break;
